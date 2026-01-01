@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buat Calon Cewe aku🗿</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("https://files.catbox.moe/wlwthl.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+
+  .box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.45);
+  }
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.card{
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(12px);
+  padding:30px;
+  border-radius:25px;
+  text-align:center;
+  max-width:420px;
+  color:#fff;
+  animation: fadeIn 1.3s ease;
+}
+
+h1{
+  font-size:24px;
+  margin-bottom:15px;
+}
+
+p{
+  font-size:14px;
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+.highlight{
+  font-weight:600;
+  color:#fff;
+}
+
+.btn{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  margin-top:10px;
+}
+
+button{
+  border:none;
+  padding:12px 22px;
+  border-radius:30px;
+  font-size:14px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+#yes{
+  background:#ff4d6d;
+  color:white;
+}
+
+#yes:hover{
+  transform:scale(1.1);
+}
+
+#no{
+  background:white;
+  color:#ff4d6d;
+  position:relative;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>Hallo VALLENE COLLE ROSE KEYLA</h1>
+
+  <p>
+  semlm kan keyla panasaran aku mau nanyak apa ini aku mau nanyak
+  Lucu ga si aku suka sama keyla karna keyla tipe aku kali wkwk
+  </p>
+
+  <p>
+    jadi gini...
+    <br><br>
+    <span class="highlight">
+      keyla mau ga jadi cewekku🗿
+    </span>
+  </p>
+
+  <div class="btn">
+    <button id="yes">Mau ❤️</button>
+    <button id="no">Nggak 💔</button>
+  </div>
+</div>
+
+<script>
+const noBtn = document.getElementById("no");
+const yesBtn = document.getElementById("yes");
+
+noBtn.addEventListener("mouseover", ()=>{
+  const x = Math.random() * 250 - 125;
+  const y = Math.random() * 250 - 125;
+  noBtn.style.transform = `translate(${x}px, ${y}px)`;
+});
+
+yesBtn.addEventListener("click", ()=>{
+  document.body.innerHTML = `
+  <div style="
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-family:Poppins;">
+    <div style="animation: fadeIn 1s ease;">
+      <h1>serius ni mau sama aku?</h1>
+      <p style="margin-top:15px; line-height:1.8;">
+        ya kalau emng beneran mau langsung chet wa ku ya.<br>
+        <br><br>
+        <a href="https://wa.me/6283190274543?text=Halo%20aku%20mau%20ngobrol" target="_blank">
+  Chat WhatsApp
+</a>
+      </p>
+    </div>
+  </div>
+  `;
+});
+</script>
+
+</body>
+</html>
